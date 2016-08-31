@@ -56,9 +56,9 @@ exports.config = {
         // 5 instance gets started at a time.
         //maxInstances: 5,
         //
-      {browserName: 'firefox', platform: 'Windows 10', version: '41.0'},
-      {browserName: 'chrome', platform: 'OS X 10.10', version: '45.0'},
-      {browserName: 'internet explorer', platform: 'Windows 7', version: '10'}
+      {browserName: 'firefox', platform: 'Windows 10', version: '41.0', name: 'Example with Firefox'},
+      {browserName: 'chrome', platform: 'OS X 10.10', version: '45.0', name: 'Example with Chrome'},
+      {browserName: 'internet explorer', platform: 'Windows 7', version: '10', name: 'Example with IE'}
     ],
     //
     // ===================
@@ -72,7 +72,7 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'verbose',
+    logLevel: 'error',
     //
     // Enables colors for log output.
     coloredLogs: true,
@@ -116,7 +116,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],//
+    services: ['sauce'],
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: http://webdriver.io/guide/testrunner/frameworks.html
@@ -185,8 +185,8 @@ exports.config = {
     // },
     //
     // Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
-    // afterTest: function (test) {
-    // },
+    //afterTest: function (test) {
+	//},
     //
     // Hook that gets executed after the suite has ended
     // afterSuite: function (suite) {
