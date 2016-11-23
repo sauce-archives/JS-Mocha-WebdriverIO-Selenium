@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '6'
+- '4'
+- '0.12'
+before_install:
+- export | grep SAUCE_
+env:
+  global:
+  - SAUCE_USERNAME=sauce_examples
+addons:
+  jwt:
+    secure: v8qewQCA+MEE4RpY+OEETIzIgOrmmo8R8zTerX6H4emSp7bL3PoMH7s4/McqAetX2+5dG3aLp9fY9MVhTbOhEbNCpEtYkB/go1gmJ/8BWUZ2MaQd243cNRQQO4PbbqwZXdWuHS987PPvsVd8mImVhipiqgQfZXIiDIHWurzJU5WHwqcBhITeyUpLFcHyxVotNItB+73eoOtZ/ZSqiJk5/UKPJWMBMJQwln8AWWw2xN9d281ICGa6NFEgy2MiuBdm5bOmHf57JfyGSqIoOtELZ/tygCzTs0NqXV/qDW8u27i7jD0Sm1XkfUuu96V8xYGXWmMltg+Nc8/TD29irk3MeLxarigPnrGSSkI3DhaSuq6p7v93jAMJUorFaIaP39hge6kEb2AmNNtCOq9GqnBUT/pIPgsjxeTKAwxRg4x5GP4+mQJ31Kr2Nja6E25B8xR39AlNGvsJC1rqNeA/zTu8KZNT51tfNO+g5Tw6OgUOiEg9ld0MQwwwb3RpJDwJuxI1k6G46X+vrvyPrE5JIEm8bQ0cepdEWBiB2VIrVkXpMlPaz28QhKeFJ7LDNg6a8xj6w7ejXeCIAwtoa40zXul/pKMQcNDUjxqFxZw0D072FFi5zLP7/iduHG7TQ6B4rZhuAB9bjbNbD90BydMD81G42QUVKjuY53AeeSQPC8d7M/g=
