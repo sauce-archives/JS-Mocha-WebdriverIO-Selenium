@@ -1,4 +1,4 @@
-var assert = require('assert');
+var expect = require('chai').expect;
 var HomePage = require('../pages/home.page');
 
 describe('Mocha Spec Sync example', function() {
@@ -11,6 +11,6 @@ describe('Mocha Spec Sync example', function() {
         HomePage.submit();
 
         var output = HomePage.getComment();
-        assert.equal(output, comment);
+        expect(output).to.equals(comment);
     });
 });
