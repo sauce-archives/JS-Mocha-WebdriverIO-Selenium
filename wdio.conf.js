@@ -82,7 +82,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: 'https://saucelabs.com',
+    baseUrl: 'http://saucelabs.github.io',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
