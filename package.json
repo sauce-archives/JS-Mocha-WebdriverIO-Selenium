@@ -8,16 +8,13 @@
   , "url" : "git@github.com:saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO.git"
   },
   "scripts": {
-    "test": "./node_modules/grunt-cli/bin/grunt"
+    "test": "./node_modules/.bin/wdio wdio.conf.js"
     },
   "dependencies": {
     "webdriverio": "*",
-    "grunt": "^0.4.5",
-    "grunt-parallel": "^0.4.1",
-    "grunt-shell": "^1.1.2",
-    "grunt-cli": "^0.1.13",
     "parallel-mocha": "*",
     "mocha": "*",
+    "chai": "*",
     "wdio-mocha-framework": "^0.3.10",
     "wdio-sauce-service": "~0.1"
   }
