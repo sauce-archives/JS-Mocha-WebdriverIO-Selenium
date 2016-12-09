@@ -11,10 +11,6 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
     ```
     $ brew install node
     ```
-    * Install Grunt Globally
-    ```
-    $ npm install -g grunt-cli
-    ```
 2. Sauce Credentials
     * In the terminal export your Sauce Labs Credentials as environmental variables:
     ```
