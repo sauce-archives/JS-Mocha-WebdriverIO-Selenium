@@ -1,5 +1,5 @@
-# JS-Mocha-WebdriverIO-Selenium-Sync
-[![Travis Status](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO-Selenium-Sync.svg?branch=master)](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO-Selenium-Sync)
+# JS-Mocha-WebdriverIO-Selenium
+[![Travis Status](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO-Selenium.svg?branch=master)](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO-Selenium)
 
 This code is provided on an "AS-IS” basis without warranty of any kind, either express or implied, including without limitation any implied warranties of condition, uninterrupted use, merchantability, fitness for a particular purpose, or non-infringement. Your tests and testing environments may require you to modify this framework. Issues regarding this framework should be submitted through GitHub. For questions regarding Sauce Labs integration, please see the Sauce Labs documentation at https://wiki.saucelabs.com/. This framework is not maintained by Sauce Labs Support.
 
@@ -47,8 +47,6 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 ##### [Node Documentation](https://nodejs.org/en/docs/)
 
 ##### [Mocha Documentation](https://mochajs.org/)
-
-##### [Grunt ](http://gruntjs.com/getting-started)
 
 ##### [Stack Overflow](http://stackoverflow.com/)
 * A great resource to search for issues not explicitly covered by documentation
