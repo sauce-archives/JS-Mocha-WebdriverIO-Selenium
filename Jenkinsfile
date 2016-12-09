@@ -15,4 +15,7 @@ node('docker') {
       }
     }
   }
+  stage('Collect Results') {
+    step([$class: 'SauceOnDemandTestPublisher'])
+  }
 }
