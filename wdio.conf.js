@@ -57,7 +57,9 @@ exports.config = {
         //maxInstances: 5,
         //
       {browserName: 'Browser', appiumVersion: '1.5.3', deviceName: 'Android Emulator', deviceOrientation: 'portrait', platformVersion: '4.4', platformName: 'Android'},
-      {browserName: 'Browser', appiumVersion: '1.4.16', deviceName: 'Android Emulator', deviceOrientation: 'portrait', platformVersion: '4.4', platformName: 'Android'}
+      {browserName: 'Browser', appiumVersion: '1.4.16', deviceName: 'Android Emulator', deviceOrientation: 'portrait', platformVersion: '4.4', platformName: 'Android'},
+      {browserName: 'Safari', appiumVersion: '1.5.3', deviceName: 'iPhone 6 Plus Simulator', deviceOrientation: 'portrait', platformVersion: '8.4', platformName: 'iOS'},
+      {browserName: 'Safari', appiumVersion: '1.4.16', deviceName: 'iPhone 6 Plus Simulator', deviceOrientation: 'portrait', platformVersion: '8.4', platformName: 'iOS'}
     ],
     //
     // ===================
