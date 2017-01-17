@@ -56,9 +56,8 @@ exports.config = {
         // 5 instance gets started at a time.
         //maxInstances: 5,
         //
-      {browserName: 'firefox', platform: 'Windows 10', version: '41.0'},
-      {browserName: 'chrome', platform: 'OS X 10.10', version: '45.0'},
-      {browserName: 'internet explorer', platform: 'Windows 7', version: '10'}
+      {browserName: 'Browser', appiumVersion: '1.5.3', deviceName: 'Android Emulator', deviceOrientation: 'portrait', platformVersion: '4.4', platformName: 'Android'},
+      {browserName: 'Browser', appiumVersion: '1.4.16', deviceName: 'Android Emulator', deviceOrientation: 'portrait', platformVersion: '4.4', platformName: 'Android'}
     ],
     //
     // ===================
