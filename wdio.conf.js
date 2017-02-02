@@ -1,5 +1,5 @@
 exports.config = {
-    
+
     //
     // =================
     // Service Providers
@@ -10,8 +10,8 @@ exports.config = {
     //
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    
-    
+
+
     //
     // ==================
     // Specify Test Files
@@ -56,8 +56,21 @@ exports.config = {
         // 5 instance gets started at a time.
         //maxInstances: 5,
         //
-      {browserName: 'Browser', appiumVersion: '1.5.3', deviceName: 'Android Emulator', deviceOrientation: 'portrait', platformVersion: '4.4', platformName: 'Android'},
-      {browserName: 'Browser', appiumVersion: '1.4.16', deviceName: 'Android Emulator', deviceOrientation: 'portrait', platformVersion: '4.4', platformName: 'Android'}
+        {
+            browserName: 'Browser',
+            appiumVersion: '1.5.3',
+            deviceName: 'Android Emulator',
+            deviceOrientation: 'portrait',
+            platformVersion: '5.1',
+            platformName: 'Android',
+        }, {
+            browserName: 'Safari',
+            appiumVersion: '1.6',
+            deviceName: 'iPhone 6 Plus Simulator',
+            deviceOrientation: 'portrait',
+            platformVersion: '8.4',
+            platformName: 'iOS',
+        }
     ],
     //
     // ===================
@@ -84,14 +97,14 @@ exports.config = {
     baseUrl: 'http://saucelabs.github.io',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 30000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
-    connectionRetryTimeout: 90000,
+    connectionRetryTimeout: 500000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 0,
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as properties. Make sure you have
@@ -185,7 +198,7 @@ exports.config = {
     //
     // Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
     //afterTest: function (test) {
-	//},
+    //},
     //
     // Hook that gets executed after the suite has ended
     // afterSuite: function (suite) {
