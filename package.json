@@ -12,7 +12,6 @@
     },
   "dependencies": {
     "webdriverio": "*",
-    "parallel-mocha": "*",
     "mocha": "*",
     "chai": "*",
     "wdio-mocha-framework": "^0.3.10",
