@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "description": "Parallel tests with Mocha and Webdriverio  =============",
   "main": "",
-  "repository" :
-  { "type" : "git"
-  , "url" : "git@github.com:saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO.git"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO.git"
   },
   "scripts": {
     "test": "./node_modules/.bin/wdio wdio.conf.js"
-    },
+  },
   "dependencies": {
     "webdriverio": "*",
     "mocha": "*",
