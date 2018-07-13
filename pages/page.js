@@ -2,6 +2,10 @@
  * Created by titusfortner on 11/23/16.
  */
 class Page {
+
+    constructor(){
+        
+    }
     
     open(path) {
         browser.url('/' + path);
@@ -9,4 +13,4 @@ class Page {
 
 }
 
-export default Page;
+module.exports = Page;
