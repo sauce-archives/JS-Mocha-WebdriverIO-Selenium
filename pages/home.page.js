@@ -1,7 +1,7 @@
 /**
  * Created by titusfortner on 11/23/16.
  */
-var Page = require('./page');
+const Page = require('./page');
 
 var HomePage = Object.create(Page, {
     a_link: {

@@ -1,11 +1,12 @@
 /**
  * Created by titusfortner on 11/23/16.
  */
-function Page () {
+class Page {
+    
+    open(path) {
+        browser.url('/' + path);
+    }
+
 }
 
-Page.prototype.open = function (path) {
-    browser.url('/' + path)
-};
-
-module.exports = new Page();
+export default Page;
