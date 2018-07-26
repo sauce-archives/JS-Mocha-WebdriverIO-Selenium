@@ -5,18 +5,13 @@ const Page = require('./page');
 
 class HomePage extends Page {
 
-    constructor() {
-        super();
-        this.a_link = browser.element("a[id='i am a link']"),
-        this.input_comment = browser.element('#comments');
-        this.submit_form = browser.element('#submit');
-        this.comment_text = browser.element('#your_comments');
-        this.title = browser.getTitle();
-        
-    }
+    get a_link() { return browser.element("a[id='i am a link']"); };
+    get input_comment() { return browser.element('#comments'); };
+    get submit_form() { return browser.element('#submit'); };
+    get comment_text() { return browser.element('#your_comments'); } 
 
     open() {
-       super.open("/training-test-page");
+       super.open("training-test-page");
     }
 
     setComment(comment) {
