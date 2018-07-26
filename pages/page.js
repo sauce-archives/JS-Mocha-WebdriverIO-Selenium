@@ -3,9 +3,7 @@
  */
 class Page {
 
-    constructor(){
-        
-    }
+    constructor(){ };
     
     open(path) {
         browser.url('/' + path);

@@ -7,7 +7,6 @@ class HomePage extends Page {
 
     constructor() {
         super();
-
         this.a_link = browser.element("a[id='i am a link']"),
         this.input_comment = browser.element('#comments');
         this.submit_form = browser.element('#submit');
@@ -17,8 +16,8 @@ class HomePage extends Page {
     }
 
     open() {
-        super.open.call(this, 'training-test-page/');
-    } 
+       super.open("/training-test-page");
+    }
 
     setComment(comment) {
         this.input_comment.setValue(comment);
@@ -28,7 +27,7 @@ class HomePage extends Page {
         this.a_link.click()
     }
 
-    submi() {
+    submit() {
         this.submit_form.click();
         var el = this.comment_text;
 

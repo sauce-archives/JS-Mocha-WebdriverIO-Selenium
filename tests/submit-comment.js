@@ -1,16 +1,16 @@
 var expect = require('chai').expect;
-var HomePage = require('../pages/home.page');
+var homePage = new (require('../pages/home.page'));
 
-describe('Mocha Spec Sync example', function() {
+xdescribe('Mocha Spec Sync example', function() {
 
     it("Submit Comment", function() {
-        HomePage.open();
+        homePage.open();
         var comment = "This is a comment";
 
-        HomePage.setComment(comment);
-        HomePage.submit();
+        homePage.setComment(comment);
+        homePage.submit();
 
-        var output = HomePage.getComment();
+        var output = homePage.getComment();
         expect(output).to.equals(comment);
     });
 });
