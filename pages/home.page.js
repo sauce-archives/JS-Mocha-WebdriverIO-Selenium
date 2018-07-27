@@ -24,7 +24,7 @@ class HomePage extends Page {
 
     submit() {
         this.submit_form.click();
-        var el = this.comment_text;
+        let el = this.comment_text;
 
         browser.waitUntil(function () {
             return el.getText() !== 'Your comments: None'
@@ -36,5 +36,3 @@ class HomePage extends Page {
     }
 
 };
-
-module.exports = HomePage;
