@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
-const homePage = new (require('../pages/home.page'));
+const HomePage = require('../pages/home.page');
+const homePage = new HomePage();
 
 describe('Mocha Spec Sync example', function() {
 

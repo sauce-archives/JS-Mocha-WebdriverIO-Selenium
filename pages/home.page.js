@@ -36,3 +36,5 @@ class HomePage extends Page {
     }
 
 };
+
+module.exports = HomePage;
