@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const HomePage = require('../pages/home.page');
+const HomePage = require('../../pages/es6_example/home.page');
 const homePage = new HomePage();
 
 describe('Mocha Spec Sync example', function() {
