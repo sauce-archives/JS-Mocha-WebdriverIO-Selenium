@@ -8,8 +8,7 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user: process.env.SAUCE_USERNAME,
-    key: process.env.SAUCE_ACCESS_KEY,
+    user: 'josh_grant',
     
     
     //
@@ -50,16 +49,29 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
+    user: 'your-testobject-username',
+    /* exclude 'key' parameter for use with RDC
+    key: 'your-access-key'
+    */
     capabilities: [
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instance available you can make sure that not more than
-        // 5 instance gets started at a time.
-        //maxInstances: 5,
-        //
-      {browserName: 'firefox', platform: 'Windows 10', version: '41.0'},
-      {browserName: 'chrome', platform: 'OS X 10.10', version: '45.0'},
-      {browserName: 'internet explorer', platform: 'Windows 7', version: '10'}
+      {
+          // assumes you have access to a Samsung S7 device as specified
+          platformName: 'Android',
+          platformVersion: '7',
+          deviceName: 'Samsung Galaxy S7',
+          testobject_api_key: 'YOUR_TESTOBJECT_PROJECT_ACCESS_KEY'
+        },
+        {
+            // also assumes access to an iPhone 7
+            platformName: 'iOS',
+            platformVersion: '11.2',
+            deviceName: 'iPhone 7',
+            testobject_api_key: 'YOUR_TESTOBJECT_PROJECT_ACCESS_KEY'
+        }
+     
     ],
+    services: ['saucerdc'] // must remove the ['sauce'] service, for now
+    
     //
     // ===================
     // Test Configurations
@@ -116,7 +128,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['sauce'],
+    services: ['saucerdc'],
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: http://webdriver.io/guide/testrunner/frameworks.html
