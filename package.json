@@ -11,11 +11,11 @@
     "test": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "dependencies": {
-    "webdriverio": "*",
+    "chai": "^4.2.0",
     "mocha": "*",
-    "chai": "*",
     "wdio-mocha-framework": "^0.3.10",
     "wdio-sauce-service": "~0.1",
-    "wdio-saucerdc-service": "1.1.0"
+    "wdio-saucerdc-service": "1.1.0",
+    "webdriverio": "*"
   }
 }

@@ -8,7 +8,7 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user: 'josh_grant',
+    user: 'josh.grant',
     
     
     //
@@ -49,7 +49,7 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    user: 'your-testobject-username',
+    
     /* exclude 'key' parameter for use with RDC
     key: 'your-access-key'
     */
@@ -57,20 +57,12 @@ exports.config = {
       {
           // assumes you have access to a Samsung S7 device as specified
           platformName: 'Android',
-          platformVersion: '7',
+          //platformVersion: '7',
           deviceName: 'Samsung Galaxy S7',
-          testobject_api_key: 'YOUR_TESTOBJECT_PROJECT_ACCESS_KEY'
+          testobject_api_key: process.env.TESTOBJECT_API_KEY
         },
-        {
-            // also assumes access to an iPhone 7
-            platformName: 'iOS',
-            platformVersion: '11.2',
-            deviceName: 'iPhone 7',
-            testobject_api_key: 'YOUR_TESTOBJECT_PROJECT_ACCESS_KEY'
-        }
-     
     ],
-    services: ['saucerdc'] // must remove the ['sauce'] service, for now
+    services: ['saucerdc'], // must remove the ['sauce'] service, for now
     
     //
     // ===================
@@ -101,7 +93,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
-    connectionRetryTimeout: 90000,
+    connectionRetryTimeout: 1000,
     //
     // Default request retries count
     connectionRetryCount: 3,
