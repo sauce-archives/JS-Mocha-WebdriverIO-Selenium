@@ -56,9 +56,9 @@ exports.config = {
     capabilities: [
       {
           // assumes you have access to a Samsung S7 device as specified
-          platformName: 'Android',
-          //platformVersion: '7',
-          deviceName: 'Samsung Galaxy S7',
+          platformName: 'iOS',
+          //platformVersion: '9.3',
+          deviceName: ' iPad_Air_real_us',
           testobject_api_key: process.env.TESTOBJECT_API_KEY
         },
     ],
@@ -93,10 +93,10 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
-    connectionRetryTimeout: 1000,
+    connectionRetryTimeout: 400000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 0,
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as properties. Make sure you have
@@ -143,7 +143,8 @@ exports.config = {
     //
 
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout: 100000
     },
     // =====
     // Hooks
