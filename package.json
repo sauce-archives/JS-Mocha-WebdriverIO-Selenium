@@ -16,6 +16,6 @@
     "wdio-mocha-framework": "^0.3.10",
     "wdio-sauce-service": "~0.1",
     "wdio-saucerdc-service": "1.1.0",
-    "webdriverio": "*"
+    "webdriverio": "4.13.2"
   }
 }

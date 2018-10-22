@@ -8,7 +8,12 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user: 'josh.grant',
+    user: 'josh_grant',
+    sauceConnectOpts: {
+        user: 'josh_grant',
+        key: '1A4834877DF74AB8B69DE39BE29CEC7F',
+        tunnelIdentifer: "myTunnel"
+    },
     
     
     //
@@ -93,7 +98,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
-    connectionRetryTimeout: 400000,
+    connectionRetryTimeout: 1000000,
     //
     // Default request retries count
     connectionRetryCount: 0,

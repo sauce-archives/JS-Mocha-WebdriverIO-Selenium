@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var HomePage = require('../pages/home.page');
 
-describe('Mocha Spec Sync example', function() {
+xdescribe('Mocha Spec Sync example', function() {
 
     it("follows link to new page", function() {
         HomePage.open();
