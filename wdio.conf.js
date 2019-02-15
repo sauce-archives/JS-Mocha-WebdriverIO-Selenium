@@ -56,8 +56,8 @@ exports.config = {
         // 5 instance gets started at a time.
         //maxInstances: 5,
         //
-      {browserName: 'firefox', platform: 'Windows 10', version: '41.0'},
-      {browserName: 'chrome', platform: 'OS X 10.10', version: '45.0'},
+      {browserName: 'firefox', platform: 'Windows 10', version: '60.0'},
+      {browserName: 'chrome', platform: 'OS X 10.13', version: '69.0'},
       {browserName: 'internet explorer', platform: 'Windows 7', version: '10'}
     ],
     //
