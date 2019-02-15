@@ -11,7 +11,7 @@
     "test": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "dependencies": {
-    "webdriverio": "*",
+    "webdriverio": "4.13.2",
     "mocha": "*",
     "chai": "*",
     "wdio-mocha-framework": "^0.3.10",
