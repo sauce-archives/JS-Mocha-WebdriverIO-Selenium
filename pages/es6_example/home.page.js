@@ -5,10 +5,10 @@ const Page = require('./page');
 
 class HomePage extends Page {
 
-    get a_link() { return browser.element("a[id='i am a link']"); };
-    get input_comment() { return browser.element('#comments'); };
-    get submit_form() { return browser.element('#submit'); };
-    get comment_text() { return browser.element('#your_comments'); } 
+    get a_link() { return $("a[id='i am a link']"); };
+    get input_comment() { return $('#comments'); };
+    get submit_form() { return $('#submit'); };
+    get comment_text() { return $('#your_comments'); } 
 
     open() {
        super.open("training-test-page");

@@ -6,23 +6,23 @@ var Page = require('./page');
 var HomePage = Object.create(Page, {
     a_link: {
         get: function () {
-            return browser.element("a[id='i am a link']");
+            return $("a[id='i am a link']");
         }
     },
 
     input_comment: {
         get: function () {
-            return browser.element('#comments');
+            return $('#comments');
         }
     },
     submit_form: {
         get: function () {
-            return browser.element('#submit');
+            return $('#submit');
         }
     },
     comment_text: {
         get: function () {
-            return browser.element('#your_comments');
+            return $('#your_comments');
         }
     },
 
