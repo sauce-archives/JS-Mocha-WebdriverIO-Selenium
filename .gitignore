@@ -2,3 +2,5 @@
 .gitignore
 .idea/
 node_modules/**/*
+.vscode/*
+*~
