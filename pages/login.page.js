@@ -11,8 +11,8 @@ class LoginPage extends Page {
     }
 
     loginAs(username, password) {
-        $("#user-name").value = username;
-        $("#password").value = password;
+        $("#user-name").addValue(username);
+        $("#password").addValue(password);
         $(".btn_action").click();
     }
 
