@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: circleci/node: 12.2.0  # primary container for the build job
+      - image: circleci/node:12.2.0  # primary container for the build job
     steps:
       - checkout
       - run:
