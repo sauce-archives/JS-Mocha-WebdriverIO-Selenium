@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node: 12.2.0  # primary container for the build job
+    steps:
+      - checkout
+      - run:
+          name: "Install dependencies"
+          command: |
+            npm install
+      - run:
+          name: "Run tests"
+          command: |
+            npm test
