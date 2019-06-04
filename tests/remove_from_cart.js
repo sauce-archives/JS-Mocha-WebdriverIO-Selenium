@@ -4,7 +4,7 @@ const inventoryPage = new InventoryPage();
 
 describe('Removing items from cart', function() {
 
-    it("remove one item", function() {
+    it("removes one item", function() {
       inventoryPage.open();
       inventoryPage.addItem(); 
       inventoryPage.addItem(); 
