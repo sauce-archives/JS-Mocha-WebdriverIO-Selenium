@@ -7,7 +7,7 @@ class CheckoutCompletePage extends Page {
     }
 
     isLoaded(){
-        return browser.$(".pony_express").isDisplayed();
+        return $(".pony_express").isDisplayed();
     }
 };
 

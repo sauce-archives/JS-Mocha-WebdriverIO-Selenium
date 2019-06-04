@@ -19,10 +19,10 @@ class CheckoutOverviewPage extends Page {
         browser.refresh();
     }
     getItemCount(){
-        return parseInt(browser.$(".shopping_cart_badge").getText());
+        return parseInt($(".shopping_cart_badge").getText());
     } 
     finishCheckout(){
-        browser.$(".cart_button").click();
+        $(".cart_button").click();
         return checkoutCompletePage;
     }  
 };
