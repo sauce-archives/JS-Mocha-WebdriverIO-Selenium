@@ -8,7 +8,8 @@
     "url": "git@github.com:saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js"
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test-checkout": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "dependencies": {
     "chai": "*",

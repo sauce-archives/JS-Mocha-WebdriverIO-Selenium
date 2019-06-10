@@ -1,6 +1,4 @@
 const Page = require('./page');
-const CheckoutCompletePage = require('../pages/checkoutCompletePage.js');
-const checkoutCompletePage = new CheckoutCompletePage();
 
 class CheckoutOverviewPage extends Page {
 
@@ -23,7 +21,6 @@ class CheckoutOverviewPage extends Page {
     } 
     finishCheckout(){
         $(".cart_button").click();
-        return checkoutCompletePage;
     }  
 };
 

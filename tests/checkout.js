@@ -1,6 +1,7 @@
 const expect = require('chai').expect;
 const CheckoutOverviewPage = require('../pages/checkoutOverviewPage.js');
 const checkoutOverviewPage = new CheckoutOverviewPage();
+const CheckoutCompletePage = require('../pages/checkoutCompletePage.js');
 
 describe('Checkout items', function() {
     //
@@ -15,7 +16,7 @@ describe('Checkout items', function() {
 
      PS. We can also manipulate the state of the app using API, DB, and cookies
      */
-    it("should be able to checkout the cart", function() {      
+    it("should be able to checkout the cart", function() {
         checkoutOverviewPage.open();
         //This is a mechanism to set the state of our application without doing any UI interactions
         checkoutOverviewPage.injectCartContents();
@@ -23,7 +24,7 @@ describe('Checkout items', function() {
 
         //This is the point where we actually use the UI to validate that a user
         // can checkout
-        let checkoutCompletePage = checkoutOverviewPage.finishCheckout();
-        expect(checkoutCompletePage.isLoaded()).to.be.true;
+        checkoutOverviewPage.finishCheckout();
+        expect(new CheckoutCompletePage().isLoaded()).to.be.true;
     });
 });
