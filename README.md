@@ -1,3 +1,6 @@
+>**NOTE:<br/>**
+> This project is not maintained anymore by Sauce Labs, samples on how to use WebdriverIO with Sauce Labs and other frameworks can be found on the [Sauce-service](https://webdriver.io/docs/sauce-service.html) and [frameworks](https://webdriver.io/docs/frameworks.html) site of WebdriverIO. 
+
 # JS-Mocha-WebdriverIO-Selenium
 [![CircleCI](https://circleci.com/gh/saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO-Selenium.svg?style=svg)](https://circleci.com/gh/saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO-Selenium)
 
